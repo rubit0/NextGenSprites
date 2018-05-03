@@ -1,0 +1,193 @@
+﻿-------------------------------------------------------------------------------------------------
+NextGenSprites
+Version 1.4
+Studio de la Torre
+support@next-gen-sprites.com
+http://www.next-gen-sprites.com
+-------------------------------------------------------------------------------------------------
+Change log
+-------------------------------------------------------------------------------------------------
+1.4
+
+[UPDATE]
+* Upgrade Project to Unity 2017.4 LTS
+
+-------------------------------------------------------------------------------------------------
+1.3.9
+
+[FIX]
+* Changed shadowy shaders to write to the depth buffer,
+  this allows Sprites to be positioned like 3D objects.
+
+-------------------------------------------------------------------------------------------------
+1.3.8
+
+[FIX]
+* Alpha Channel on Liquid Shader
+
+-------------------------------------------------------------------------------------------------
+1.3.7
+
+[FIX]
+* Disabled Culling on FX Shaders
+* Encoding Error on NGS.cginc
+
+-------------------------------------------------------------------------------------------------
+1.3.6
+
+[UPDATE]
+* All Shaders can now be tinted by the SpriteRenderer Components color property.
+  This is the same behavior as with Unity’s Standard Sprites which does not yield new Material
+  Instances and reduces Draw Calls (i.e. preserves Batching).
+
+-------------------------------------------------------------------------------------------------
+1.3.5
+
+[UPDATE]
+* Glass/Liquid: Added SpriteBlending Property
+	|-> Note: Sprites may appear invisible, just ramp up alph back to 1
+
+[FIX]
+* Glass/Liquid: Screengrab is now properly tinted
+
+-------------------------------------------------------------------------------------------------
+1.3.4
+
+[FIX]
+* MegaStack: "_Layer4" Property redefinition error
+* Android/Linux(?): nVIDIA CG to GLSL conversion could not perform implicit int to float casting
+
+-------------------------------------------------------------------------------------------------
+1.3.3
+
+[FIX]
+* Shadow casting works now properly on flipped and rotated Sprites
+* Point/Spot Lights now do cast Shadows (before only Directional Lights were supported)
+* Reduced Vertex-output register count
+
+-------------------------------------------------------------------------------------------------
+1.3.2
+
+[NEW]
+* Liquid Shader supports Render Textures
+* Render Texture Shader Keyword for Liquid Shader
+
+-------------------------------------------------------------------------------------------------
+1.3.1
+
+[NEW]
+* Added Hue Shift with Hue, Saturation, Brightness and Contrast to all main Shaders
+* HSB_TINT_ON is a new Shader feature which can be toggled from the Inspector
+* _HSBC Vector4 property added to controll the Hue Shift feature
+
+[UPDATE]
+* New Icons for Inspector
+* Inspector warns about Shadowy Shader restrictions
+* Implemented NGS Base Class Shader library to simplify Shader Code
+
+-------------------------------------------------------------------------------------------------
+
+1.3.0
+
+[NEW]
+* Added an additional Standard "Shadowy" Shader variation which can receive Shadows.
+* Added MegaStack Shader. Based on Unlit shader and stacks up to 10 Sprites.
+
+[UPDATE]
+* Unlit now supports Curvature (fixed front directional)
+
+-------------------------------------------------------------------------------------------------
+
+1.2.2
+
+[NEW]
+* Added a Dual Material Class which allows to you lerp linear between two Materials float and color
+  properties. This is especially useful for lerping with Tweening Engines.
+
+-------------------------------------------------------------------------------------------------
+
+1.2.1
+
++++ Please Note +++
+If you come from a previous Version, you may need to delete:
+*NextGenSprites//Utils/Helpers/PropertiesCollectionManager.cs
+*NextGenSprites//Utils/Helpers/PropertiesCollectionSoloManager.cs
+
+[NEW]
+* Added a method to update materials smoothly by a supplied duration to the Properties Collection
+  Handler and Controller
+  # since this method takes two arguments, you can't set it conveniently on a OnClick action for an
+	GUI Button. Instead, you can use "UpdateMaterialByArguments" to parse arguments as strings.
+	First comes the collection name and second the duration in seconds separated by a colon e.g.: "Idle:1.35"
+
+[UPDATE]
+* Renamed Scripts related to Properties Collection to be more explicit about their purpose
+* Some simple custom inspectors for the Properties Collection Remote classes
+
+[FIX]
+* Errors when invoking some buttons on the extras Panel from the Material Inspector
+* Preferences are now saved per Project and not global
+* Several smaller bug fixes on Shaders and Scripts
+
+-------------------------------------------------------------------------------------------------
+
+1.2.0
+
+[NEW]
+* Liquid and Lava can now Scroll by World Position or Time(Auto scrolling)
+* Added Scriptable Object of type "Properties Collection" to store Collections of Shader Properties
+* Added a custom Icon for the Properties Collection
+* Properties Collection can be created in Editor from: Menu\Assets\Create\Properties Collection
+* Create from or apply to a Material a Properties Collection directly from the Material Inspector
+* Inherit from "Properties Collection Base" for basic Properties Collection handling via scripting
+* Added a basic "Properties Collection Manager" to update the Material from AnimationEvents/Scripts/PlayMaker
+	# Invoke: UpdateMaterial(collectionId)
+* Multi Layer supports now Transparency without the need for a helper Mask
+* Layers have now individual Tinting
+* Added Stencil (RGB)Masking as a "Soft"-feature for Multi Layer
+* Added an additional 4th Sprite Layer (going from 0 to 4)
+* Emission operates now by default with Multi Channel Masking
+* Scrolling added as a "Soft"-Shader Feature
+* Emission Pulse Animation added as a "Soft"-Shader Feature
+* Pulse Animation is now present on all 3 Emission Channels
+
+[UPDATE]
+* Following Features have been changed to a "Soft-"Shader Feature:
+  - Double Sided
+  - Pixel Snapping
+  - Multi Sprite Layer
+* Added ShaderFeatureRuntime Enum which only contains Shader Features that can be toggled at runtime
+* Removed Multi Layer Sprite Mask property from Shaders, Scripts and Inspectors
+* Removed Multi Channel Emission Shader Key "EMISSION_MULTILAYER_ON"
+* Renamed _EmissionToggleAnimation3 to _EmissionBlendAnimation3
+* New Shader Properties added to all related Classes and Inspectors
+* Changed PlayMaker Action "SetShaderFeature" Enum to ShaderFeatureRuntime
+
+###########
+[DISCLAMER]
+###########
+"Soft-"Shader Features can be only toggled in Edit Mode. Due to this change, please only use
+from now on the 'ShaderFeatureRuntime' Enumeration to toggle Shader Features.
+
+-------------------------------------------------------------------------------------------------
+
+1.1.0
+
+[NEW]
+* Multi Sprite Layer and Multi Emission Channel Masking added
+* Added two new examples to the Demo Scene
+
+[UPDATE]
+* New Shader Properties added to all related Classes and Inspectors
+* Moved 'Pixel Snap' and 'Doubled Sided' to Extras panel
+
+[FIX]
+* Weak Emission [Multi & Single] when there were no Lighting in Scene
+* Open Widget button in Material Inspector broken
+
+-------------------------------------------------------------------------------------------------
+
+1.0.0
+
+[NEW]
+* Initial release

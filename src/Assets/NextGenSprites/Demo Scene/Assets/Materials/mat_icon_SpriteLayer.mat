@@ -1,0 +1,161 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: mat_icon_SpriteLayer
+  m_Shader: {fileID: 4800000, guid: b9ed975f1d59041ff9af22197ac927ea, type: 3}
+  m_ShaderKeywords: EMISSION_ON ETC1_EXTERNAL_ALPHA SPRITE_MULTILAYER_ON SPRITE_STENCIL_ON
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DissolveTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Illum:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Layer1:
+        m_Texture: {fileID: 2800000, guid: 22754276c239ff54aa9e641046502cbd, type: 3}
+        m_Scale: {x: 0.5, y: 0.5}
+        m_Offset: {x: 0, y: 0}
+    - _Layer2:
+        m_Texture: {fileID: 2800000, guid: ecefbec8679a1ee448248ffeeb26d9a5, type: 3}
+        m_Scale: {x: 0.3, y: 0.3}
+        m_Offset: {x: 0, y: 0}
+    - _Layer3:
+        m_Texture: {fileID: 2800000, guid: 3f729612e5ec78c43bf8d1c945bf5474, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: -0.33, y: 0}
+    - _Layer4:
+        m_Texture: {fileID: 2800000, guid: 3f729612e5ec78c43bf8d1c945bf5474, type: 3}
+        m_Scale: {x: 0.75, y: 0.75}
+        m_Offset: {x: 0, y: 0}
+    - _LayerMask:
+        m_Texture: {fileID: 2800000, guid: 388977b949a16bc44b24f26c6d40385c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ReflectionMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ReflectionTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _StencilMask:
+        m_Texture: {fileID: 2800000, guid: f066634d9cf431a4684129ab712d4922, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TransmissionTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - PixelSnap: 0
+    - _BumpScale: 1
+    - _CurvatureDepth: 0.5
+    - _Cutoff: 0.5
+    - _DetailNormalMapScale: 1
+    - _DissolveBlend: 0
+    - _DissolveBorderWidth: 10
+    - _DissolveGlowStrength: 1
+    - _DstBlend: 0
+    - _EmissionBlendAnimation1: 0
+    - _EmissionBlendAnimation2: 0
+    - _EmissionBlendAnimation3: 0
+    - _EmissionPulseSpeed1: 1
+    - _EmissionPulseSpeed2: 1
+    - _EmissionPulseSpeed3: 1
+    - _EmissionStrength: 0.2
+    - _EmissionStrength2: 0
+    - _EmissionStrength3: 0
+    - _EmissionToggleAnimation3: 0
+    - _Glossiness: 0.5
+    - _Layer0ScrollingX: 0
+    - _Layer0ScrollingY: 0
+    - _Layer1Opacity: 0.7
+    - _Layer1ScrollingX: -0.1
+    - _Layer1ScrollingY: -0.015
+    - _Layer2Opacity: 1
+    - _Layer2ScrollingX: -0.2
+    - _Layer2ScrollingY: -0.15
+    - _Layer3Opacity: 1
+    - _Layer3ScrollingX: 0.3
+    - _Layer3ScrollingY: 0.3
+    - _Layer4Opacity: 1
+    - _Layer4ScrollingX: 0.15
+    - _Layer4ScrollingY: 0.15
+    - _Metallic: 0
+    - _Mode: 0
+    - _OcclusionStrength: 1
+    - _Parallax: 0.02
+    - _ReflectionBlur: 0
+    - _ReflectionScrollingX: 0.25
+    - _ReflectionScrollingY: 0.25
+    - _ReflectionStrength: 0
+    - _Specular: 0.2
+    - _SrcBlend: 1
+    - _TransmissionDensity: 0
+    - _UVSec: 0
+    - _ZWrite: 1
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _DissolveGlowColor: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _EmissionTint: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionTint2: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionTint3: {r: 1, g: 1, b: 1, a: 1}
+    - _HSBC: {r: 0, g: 0.5, b: 0.5, a: 0.5}
+    - _Layer1Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Layer2Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Layer3Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Layer4Color: {r: 1, g: 1, b: 1, a: 1}
+    - _SpecColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}

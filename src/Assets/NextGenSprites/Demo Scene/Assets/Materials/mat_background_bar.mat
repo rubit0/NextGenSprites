@@ -1,0 +1,109 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: mat_background_bar
+  m_Shader: {fileID: 4800000, guid: 4452ea29bec676e41bdbccda3273b598, type: 3}
+  m_ShaderKeywords: CURVATURE_ON ETC1_EXTERNAL_ALPHA REFLECTION_ON
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 2800000, guid: 62dcbac8f3861a54f8cc4a221623b839, type: 3}
+        m_Scale: {x: 1, y: 0.3}
+        m_Offset: {x: 0, y: 0}
+    - _DissolveTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Illum:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Layer1:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Layer2:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Layer3:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ReflectionMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ReflectionTex:
+        m_Texture: {fileID: 2800000, guid: 9fb28395a619ee24b84114c0d725ebb0, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _StencilMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TransmissionTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - PixelSnap: 0
+    - _CurvatureDepth: 0.14
+    - _Cutoff: 0.5
+    - _DissolveBlend: 0
+    - _DissolveBorderWidth: 10
+    - _DissolveGlowStrength: 1
+    - _EmissionBlendAnimation1: 0
+    - _EmissionBlendAnimation2: 0
+    - _EmissionBlendAnimation3: 0
+    - _EmissionPulseSpeed1: 1
+    - _EmissionPulseSpeed2: 1
+    - _EmissionPulseSpeed3: 1
+    - _EmissionStrength: 0
+    - _EmissionStrength2: 0
+    - _EmissionStrength3: 0
+    - _EmissionToggleAnimation3: 0
+    - _Layer0ScrollingX: 0
+    - _Layer0ScrollingY: 0
+    - _Layer1Opacity: 1
+    - _Layer1ScrollingX: 0
+    - _Layer1ScrollingY: 0
+    - _Layer2Opacity: 1
+    - _Layer2ScrollingX: 0
+    - _Layer2ScrollingY: 0
+    - _Layer3Opacity: 1
+    - _Layer3ScrollingX: 0
+    - _Layer3ScrollingY: 0
+    - _ReflectionBlur: 0
+    - _ReflectionScrollingX: 0.25
+    - _ReflectionScrollingY: 0.25
+    - _ReflectionStrength: 1
+    - _Specular: 0.286
+    - _TransmissionDensity: 0
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _DissolveGlowColor: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionTint: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionTint2: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionTint3: {r: 1, g: 1, b: 1, a: 1}
+    - _HSBC: {r: 0, g: 0.5, b: 0.5, a: 0.5}
+    - _Layer1Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Layer2Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Layer3Color: {r: 1, g: 1, b: 1, a: 1}
+    - _SpecColor: {r: 1, g: 1, b: 1, a: 1}
